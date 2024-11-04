@@ -1,0 +1,35 @@
+.spotlight {
+    padding: 1rem;
+    background-color: $white;
+    color: black;
+    text-align: left;
+
+
+    &__category {
+    color: $light-blue;
+    padding: 1rem 0;
+
+}
+
+    &__text {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+    &__button {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid $orange;
+    border-radius: 40px;
+    color: $orange;
+    cursor: pointer;
+
+}
+
+    &__button:hover {
+    background-color: $orange;
+    color: $white;
+    transition: background-color 0.3s ease;
+}
+
+}
