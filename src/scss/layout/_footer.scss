@@ -4,6 +4,7 @@
     padding: 2rem;
     text-align: center;
 
+
     &__pages-links, &__social-media-links {
         list-style: none;
         padding: 10px;
@@ -15,11 +16,11 @@
             margin: 0.5rem 0;
 
             a {
-                color: white;
+                color: $white;
                 text-decoration: none;
 
                 &:hover {
-                    color:#f26002;
+                    color: $orange;
                 }
             }
         }
@@ -27,22 +28,26 @@
 
 small {
     display: block;
-    margin-top: 1 rem;
-    color: white;
+    margin-top: 1rem;
+    color: $white;
 
     &:last-child {
         margin-top: 0.5rem;
-        color: #f26002;
+        color: $orange;
     }
 }
 
 @media (min-width: 768px) {
+    .footer__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 auto;
     width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
     text-align: left;
+    }
 
     &__small {
         width: 33%;
@@ -59,7 +64,7 @@ small {
     &__pages-links {
         width: 33%;
         text-align: center;
-        order: 1;
+        order: 3;
     }
 
 }
