@@ -11,16 +11,32 @@
         margin: 0 0 1rem 0;
         cursor: pointer;
 
-
+        @keyframes buttonHover {
+            0% {
+                transform: scale(1);
+                color: $white;
+            }
+            50% {
+                transform: scale(1.1);
+                color: $orange;
+            }
+            100% {
+                transform: scale(1);
+                color: $white;
+            }
+        }
+        
         li {
             margin: 0.5rem 0;
 
             a {
                 color: $white;
                 text-decoration: none;
+                transition: transform 0.3s ease, color 0.3 ease;
 
                 &:hover {
                     color: $orange;
+                    animation: buttonHover 0.5 ease-in-out forwards;
                 }
             }
         }
